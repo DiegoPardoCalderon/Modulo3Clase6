@@ -42,7 +42,7 @@ function mostrarColores(){
 }
 
 function eliminar(indice) {
-    if(confirm("¿Seguro que desea eliminar ese color?")){
+    if(confirm(`¿Seguro que desea eliminar el color ${colores[indice]}?`)){
     var eliminado = colores.splice(indice, 1)
     alert(`Usted ha eliminado el color ${eliminado[0]}`)
     mostrarColores()
